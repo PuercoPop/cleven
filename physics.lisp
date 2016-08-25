@@ -26,6 +26,7 @@
 
 (define-foreign-library libphysics
   ;; FIXME Search path
+  (:unix "libBulletDynamics.so")
   (t (:default "./libbullet")))
 
 (use-foreign-library libphysics)
